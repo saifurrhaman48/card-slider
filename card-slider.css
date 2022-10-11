@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+box-sizing: border-box;
+font-family:'poppins',sans-sarif ;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+}
+
+
+.slider-container{
+    max-width: 1120px;
+    height: 65%;
+    width:80%;
+   
+    padding: 40px 0px;
+}
+.slide-content{
+  
+    margin: 0 40px;
+    
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+   
+    
+    border-radius: 25px;
+    background: #fff;
+}
+.card-image{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.782);
+    padding:2px;
+}
+.card-img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    
+    outline: none;
+    border: 3px solid #2f3c7e;
+    
+   
+}
+
+
+.image-content,
+.card-content{
+padding: 10px 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+align-items: center;
+flex-direction: column;
+}
+.overlay{
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 100%;
+outline:none;
+background-color:#2f3c7e;
+border-radius: 25px 25px 0 0;
+
+}
+.image-content{
+row-gap:5px;
+position: relative;
+}
+.name{
+color: #333;
+font-size: 18px;
+font-weight:bold;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.description{
+color: #707070;
+font-size: 14px;
+margin-top: 10px;
+text-align: justify;
+font-family: system-ui;
+}
+.button{
+border: none;
+cursor: pointer;
+padding: 8px 16px;
+background-color:  #2f3c7e;
+border-radius: 4px;
+color: #FFF;
+
+margin: 25px;
+transition: all 0.4s ease;
+}
+.button:hover{
+background-color: #2f3c7e;
+}
+.swiper-navBtn{
+color:#2f3c7e;
+transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+color: #2f3c7e;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before{
+font-size: 40px;
+}
+.swiper-button-next{
+right: 0;
+}
+
+.swiper-button-prev {
+left: 0;
+}
+.swiper-pagination-bullet{
+background-color: #2f3c7e;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+background-color:#2f3c7e;
+
+}
+@media only screen and (max-width:768px) {
+
+.swiper-navBtn{
+display: none;
+}
+.slide-content{
+margin: 0 10px;
+}
+}
+

@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card slider</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="card-slider.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="slider-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic1.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">David Young</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic2.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Atticus Finch</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic3.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">David Wiily</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic4.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Harry Potter</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic5.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Emily Elizabeth </h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="image/pic6.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Samantha </h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem,
+                            ipsum dolor.</p>
+
+                        <button class="button">View More
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</body>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centerSlide: 'true',
+        fade: 'true',
+        gragCursor: 'true',
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: 'true',
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            }
+        }
+    });
+</script>
+
+</html>
